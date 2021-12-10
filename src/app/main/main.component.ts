@@ -19,7 +19,23 @@ export class MainComponent implements OnInit {
     this.numerosTela = eval(this.numerosTela);
   }
   clickDiv(evento){
-    this.numerosTela += evento;
+    if(this.numerosTela == "+" ||this.numerosTela == "-" ||this.numerosTela == "/" ||this.numerosTela == "*"){
+      this.limpar();
+    }
+    if(this.numerosTela.substring(this.numerosTela.length -1) === "+" && evento === "+"){
+
+    }else if(this.numerosTela.substring(this.numerosTela.length -1) === "-" && evento === "-"){
+    }else if(this.numerosTela.substring(this.numerosTela.length -1) === "*" && evento === "*"){
+    }else if(this.numerosTela.substring(this.numerosTela.length -1) === "/" && evento === "/"){
+    }else{
+
+      
+     this.numerosTela += evento;
+      
+    }
+    
+    
+    
   }
   
   }
