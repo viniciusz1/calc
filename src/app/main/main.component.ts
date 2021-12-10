@@ -11,10 +11,16 @@ export class MainComponent implements OnInit {
  
   ngOnInit() {
   }
-  
-  clickDiv(evento){
-    console.log('Meu evento é ',evento)
+  numerosTela = ""
+  limpar(){
+    this.numerosTela = ""
   }
-
+  resultado(){
+    this.numerosTela = eval(this.numerosTela);
+  }
+  clickDiv(evento){
+    this.numerosTela += evento;
+  }
+  
   }
 
