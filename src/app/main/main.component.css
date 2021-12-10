@@ -1,0 +1,41 @@
+.sinais{
+    background-color: rgb(228, 84, 84);
+    column-gap: 10px;
+    cursor: pointer;    
+    border: black 1px solid;
+    border-radius: 4px;
+}
+.sinais:hover{
+    background-color: rgb(185, 228, 84);
+    column-gap: 10px;
+    cursor: pointer;    
+    border: black 1px solid;    
+    border-radius: 4px;
+}
+.numeros{
+    background-color: grey;
+    column-gap: 10px;
+    cursor: pointer;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+.numeros:hover{
+    background-color: rgb(185, 228, 84);
+    column-gap: 10px;
+    cursor: pointer;
+    border: black 1px solid;
+    border-radius: 4px;
+}
+.redor{
+    background-color: black;
+    display: grid;
+    width: 250px;
+    margin: auto;
+    margin-top: 210px;
+    border-radius: 10px;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+.visor{
+    margin-bottom: 15px;
+}

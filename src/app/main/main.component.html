@@ -1,30 +1,29 @@
-<app-linha>
-  <app-visor [numerosVisor]="numerosTela"></app-visor>
+<div class="redor" >
+  <app-linha>
+    <app-visor [numerosVisor]="numerosTela" class="visor"></app-visor>
   </app-linha>
   <app-linha>
-    <app-botao [numbers]="'1'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'2'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'3'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'+'" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'1'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'2'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'3'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'+'" class="sinais" (onClick)="clickDiv($event)"></app-botao>
   </app-linha>
   <app-linha>
-    <app-botao [numbers]="'4'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'5'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'6'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'-'" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'4'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'5'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'6'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'-'" class="sinais" (onClick)="clickDiv($event)"></app-botao>
   </app-linha>
   <app-linha>
-    <app-botao [numbers]="'7'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'8'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'9'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'*'" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'7'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'8'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'9'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'*'" class="sinais" (onClick)="clickDiv($event)"></app-botao>
   </app-linha>
   <app-linha>
-    <app-botao [numbers]="'0'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'/'" (onClick)="clickDiv($event)"></app-botao>
-    <app-botao [numbers]="'='" (onClick)="resultado()"></app-botao>
-    <app-botao [numbers]="'L'" (onClick)="limpar()"></app-botao>
+    <app-botao [numbers]="'0'" class="numeros" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'/'" class="sinais" (onClick)="clickDiv($event)"></app-botao>
+    <app-botao [numbers]="'='" class="sinais" (onClick)="resultado()"></app-botao>
+    <app-botao [numbers]="'L'" class="sinais" (onClick)="limpar()"></app-botao>
   </app-linha>
-  <app-linha>
-  
-  </app-linha>
+</div>
