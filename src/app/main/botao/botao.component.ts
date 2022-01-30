@@ -9,6 +9,7 @@ export class BotaoComponent implements OnInit {
 
   constructor() { }
   @Input() numbers;
+  variavel = ""
   @Output() onClick = new EventEmitter<any>();
   ngOnInit() {
   }
